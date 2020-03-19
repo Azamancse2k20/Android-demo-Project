@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Class 14</string>
+
+    <string name="welcome">Welcome \n Back </string>
+
+    <string name="sign_in">Sign in</string>
+    <string name="sign_uptext"><u> Sign Up </u></string>
+    <string name="sign_intext"><u> Sign in </u></string>
+
+
+    <string name="forgotbtn"><u>Forgot Passwords</u></string>
+
+    <string name="createText">Create \n Account</string>
+</resources>

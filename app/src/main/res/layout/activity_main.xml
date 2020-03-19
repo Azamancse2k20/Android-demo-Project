@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeId"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/back"
+        >
+
+        <Button
+            android:id="@+id/backBtnId"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/arrow_left"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:textColor="#ffffff"
+            android:textSize="35dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="20dp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/editLayId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/relativeId"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        >
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailTextId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:hint="Email"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordTextId"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:drawableRight="@drawable/ic_visibility_off_black_24dp"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/btnRelativeLayId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editLayId"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            android:textSize="30sp"
+            android:gravity="center"
+            />
+
+        <ImageButton
+            android:id="@+id/ImageBtbId"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/shape"
+            android:layout_marginStart="300dp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnRelativeLayId"
+        android:layout_marginTop="50dp"
+        android:weightSum="2"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_uptext"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgotbtn"
+            android:textSize="20sp"
+            android:background="#00ffffff"
+           android:layout_weight="1"
+
+            />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

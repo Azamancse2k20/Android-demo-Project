@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    android:orientation="vertical"
+    tools:context=".SignUp">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeId"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        >
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:background="@drawable/arrow_left"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/createText"
+            android:textColor="#ffffff"
+            android:textSize="35dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="40dp"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/editLayId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/relativeId"
+        android:layout_marginStart="20dp"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nameTextId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:hint="Name"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailTextId"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:inputType="text"
+                android:hint="Email"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            >
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordTextId"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:drawableRight="@drawable/ic_visibility_off_black_24dp"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btnRelativeLayId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editLayId"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:weightSum="2"
+        android:layout_marginTop="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_marginRight="160dp"
+            />
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/shape"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnRelativeLayId"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_intext"
+            android:textSize="25sp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</LinearLayout>
